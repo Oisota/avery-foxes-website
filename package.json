@@ -10,6 +10,7 @@
 	"author": "Derek Morey",
 	"license": "GPL-3.0",
 	"dependencies": {
+		"bootstrap": "^4.3.1",
 		"jstransformer-marked": "^1.0.3",
 		"jstransformer-nunjucks": "^0.5.0",
 		"jstransformer-scss": "^1.0.0",
