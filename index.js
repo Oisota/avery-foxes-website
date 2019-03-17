@@ -49,7 +49,10 @@ Metalsmith(__dirname)
 	}]
 }))
 .use(fingerprint({
-	pattern: 'css/*.css',
+	pattern: [
+		'css/*.css',
+		'assets/*',
+	]
 }))
 .use(layouts())
 .use(permaLinks({
