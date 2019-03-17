@@ -1,0 +1,61 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<div class="row">
+	<div class="col-lg-5 bg-secondary text-dark">
+	<div class="d-flex flex-column justify-content-center h-100">
+		<h1 class="band-name text-center m-2 display-1">Avery Foxes</h1>
+	</div>
+	</div>
+	<div class="col-lg-7 bg-light m-0 p-0">
+		<img src="/assets/avery-foxes.jpg" width="100%" alt="Avery Foxes">
+	</div>
+</div>
+
+<div class="row bg-dark text-light py-5 px-2 px-xl-5">
+	<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 my-5">
+		<h1 class="text-center border-bottom border-secondary">About</h1>
+		{{contents | safe}}
+	</div>
+</div>
+
+<div class="row border-top border-secondary bg-dark text-light">
+	<div class="col-lg-7 border-right border-bottom border-secondary py-5 px-1 px-xl-5 px-lg-5 px-md-5 px-sm-1">
+		<h1 class="text-center border-bottom border-secondary mt-5">Shows</h3>
+		<ul class="list-group">
+			{% for show in collections.shows %}
+			<li class="list-group-item bg-secondary text-light d-flex flex-wrap justify-content-between align-items-center">
+				<span>{{show.title}}</span>
+				<span class="badge badge-dark">{{show.date}}</span>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="col-lg-5 border-bottom border-secondary py-5 px-2 px-md-5 px-sm-2">
+		<h1 class="text-center border-bottom border-secondary mt-5">Contact</h1>
+		<p>If you would like to book us for an event please leave us a message below and we will get back to you with our availability. Thanks.</p>
+		<form>
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input class="form-control" type="text" name="name" id="name" value=""/>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input class="form-control" type="email" name="email" id="email" value=""/>
+			</div>
+			<div class="form-group">
+				<label for="phone">Phone</label>
+				<input class="form-control" type="phone" name="phone" id="phone" value=""/>
+			</div>
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" rows="10" class="form-control"></textarea>
+			</div>
+			<div class="d-flex justify-content-around align-items-center">
+				<input class="btn btn-secondary" type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

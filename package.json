@@ -1,0 +1,25 @@
+{
+	"name": "avery-foxes-website",
+	"version": "1.0.0",
+	"description": "Website for the Avery Foxes",
+	"main": "index.js",
+	"scripts": {
+		"start": "http-server dist",
+		"build": "node index.js"
+	},
+	"author": "Derek Morey",
+	"license": "GPL-3.0",
+	"dependencies": {
+		"jstransformer-marked": "^1.0.3",
+		"jstransformer-nunjucks": "^0.5.0",
+		"jstransformer-scss": "^1.0.0",
+		"metalsmith": "^2.3.0",
+		"metalsmith-collections": "^0.9.0",
+		"metalsmith-date-formatter": "^1.0.2",
+		"metalsmith-fingerprint-ignore": "^2.0.0",
+		"metalsmith-in-place": "^4.2.0",
+		"metalsmith-layouts": "^2.3.0",
+		"metalsmith-permalinks": "^2.2.0",
+		"metalsmith-watch": "^1.0.3"
+	}
+}
