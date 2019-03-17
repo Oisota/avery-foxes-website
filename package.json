@@ -2,6 +2,10 @@
 	"name": "avery-foxes-website",
 	"version": "1.0.0",
 	"description": "Website for the Avery Foxes",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Oisota/avery-foxes-website"
+	},
 	"main": "index.js",
 	"scripts": {
 		"start": "http-server dist",
@@ -12,6 +16,7 @@
 	"license": "GPL-3.0",
 	"dependencies": {
 		"bootstrap": "^4.3.1",
+		"jstransformer-clean-css": "^2.1.0",
 		"jstransformer-marked": "^1.0.3",
 		"jstransformer-nunjucks": "^0.5.0",
 		"jstransformer-scss": "^1.0.0",
