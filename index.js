@@ -20,6 +20,11 @@ Metalsmith(__dirname)
 .metadata({
 	bandName: 'The Avery Foxes',
 	liveReload: process.env.NODE_ENV === 'development',
+	contact: {
+		subject: 'Avery Foxes Message',
+		redirectURL: 'https://derekmorey.me/avery-foxes/thank-you/',
+		formspreeURL: 'https://formspree.io/derek.o.morey@gmail.com',
+	},
 })
 .source('src')
 .destination('dist')
