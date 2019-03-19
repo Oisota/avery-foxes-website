@@ -6,16 +6,15 @@ html, body {
 body {
 	font-family: 'Montserrat', serif;
 }
-.band-name {
+.perm-marker {
 	font-family: 'Permanent Marker', serif;
 }
 
 @import 'node_modules/bootstrap/scss/_functions.scss';
 
 $theme-colors: (
-	'secondary': #533,
+	'primary': #533,
 	'dark': #222,
 );
-
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';

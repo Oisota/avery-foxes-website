@@ -24,6 +24,7 @@ Metalsmith(__dirname)
 		subject: 'Avery Foxes Message',
 		redirectURL: 'https://derekmorey.me/avery-foxes/thank-you/',
 		formspreeURL: 'https://formspree.io/derek.o.morey@gmail.com',
+		message: 'If you would like to book us for an event please leave us a message below and we will get back to you with our availability.',
 	},
 })
 .source('src')
@@ -50,7 +51,7 @@ Metalsmith(__dirname)
 .use(dateFormatter({
 	dates: [{
 		key: 'date',
-		format: 'MMMM Do, h:mm A'
+		format: 'dddd MMMM Do [at] h:mm A'
 	}]
 }))
 .use(fingerprint({
