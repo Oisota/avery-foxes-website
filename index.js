@@ -22,7 +22,7 @@ Metalsmith(__dirname)
 	liveReload: process.env.NODE_ENV === 'development',
 	contact: {
 		subject: 'Avery Foxes Message',
-		redirectURL: 'https://derekmorey.me/avery-foxes/thank-you/',
+		redirectURL: 'https://avery-foxes.com/thank-you/',
 		formspreeURL: 'https://formspree.io/derek.o.morey@gmail.com',
 		message: 'If you would like to book us for an event please leave us a message below and we will get back to you with our availability.',
 	},
