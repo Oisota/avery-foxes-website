@@ -1,13 +1,7 @@
 ---
+pageTitle: Avery Foxes
 layout: index.njk
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Nullam vestibulum fringilla suscipit.
-Vivamus lectus ligula, dapibus sit amet augue in, imperdiet placerat turpis.
-Integer accumsan finibus arcu, in aliquam justo aliquam a.
-In iaculis, enim quis dapibus egestas, enim tellus interdum lectus, laoreet dictum nisl lectus quis velit.
-Vestibulum tristique ac lorem a commodo.
-Pellentesque lacinia orci ac lacus egestas, in elementum felis finibus.
-Nulla congue nisi at lectus finibus, ultrices iaculis massa volutpat.
-Nullam quis hendrerit nisi, at euismod ante.
-Donec vel justo consequat, commodo lorem nec, auctor magna.
+We are an acoustic band from Huron, Ohio with an eclectic mix of songs and genres in our repetoire.
+You'll hear everything from Foo Fighters to Alice Cooper to the Beatles at our shows.
+We'd love to play at your next event.
