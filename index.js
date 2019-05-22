@@ -46,6 +46,11 @@ Metalsmith(__dirname)
 	shows: {
 		pattern: 'shows/*',
 		sortBy: 'date',
+		filterBy(show) { // filter out past shows
+			const ts = (new Date(show.date)).valueOf();
+			const now = (new Date()).valueOf();
+			return ts > now;
+		},
 	}
 }))
 .use(dateFormatter({
